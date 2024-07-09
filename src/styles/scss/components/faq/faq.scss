@@ -1,0 +1,26 @@
+.faq {
+  padding-bottom: 174px;
+
+  &__tab {
+    @include flex-gap(20px, true);
+    color: map-get($colors, 'caret-color');
+    height: 60px;
+    align-items: center;
+  }
+
+  .accent-tab {
+    color: map-get($colors, 'accent-tab');
+  }
+
+  &__more-info {
+    @include flex-gap(62px, true);
+    padding: 0 0 30px 52px;
+
+    p {
+      line-height: 20px;
+      color: map-get($colors, 'main-font-color');
+      font-size: map-get($font-sizes, 'sm');
+      width: 391px;
+    }
+  }
+}

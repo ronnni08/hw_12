@@ -1,0 +1,78 @@
+.app {
+  background-image: url($base-assets-path + 'svg/clouds-app.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__content {
+    padding: 170px 0;
+  }
+
+  &__description {
+    text-align: center;
+    margin-bottom: 92px;
+
+    h6 {
+      color: map-get($colors, 'headers-color');
+      font-size: map-get($font-sizes, 'xs');
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-family: $main-font-family;
+      color: map-get($colors, 'headers-color');
+      font-weight: 600;
+      font-size: map-get($font-sizes, 'lg');
+      margin-bottom: 28px;
+    }
+    p {
+      max-width: 470px;
+      margin: 0 auto;
+      line-height: 30px;
+      color: map-get($colors, 'main-font-color');
+    }
+  }
+
+  &__features {
+    @include flex-gap(67px, true);
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 92px;
+
+    .app-logo {
+      width: 69px;
+      height: 69px;
+      border-radius: 90%;
+      color: map-get($colors, 'tittle-color');
+      background-color: map-get($colors, 'logo-bg');
+      font-size: map-get($font-sizes, 'lg');
+      margin: auto;
+      padding-top: 20px;
+      font-weight: 700;
+    }
+
+    h5 {
+      font-weight: 700;
+      color: map-get($colors, 'tittle-color');
+    }
+
+    p {
+      max-width: 140px;
+      margin: 0 auto;
+      line-height: 20px;
+      color: map-get($colors, 'main-font-color');
+      font-size: map-get($font-sizes, 'xs');
+    }
+  }
+
+  &__btns {
+    @include flex-gap(0, true);
+    justify-content: center;
+
+    p {
+      width: 95px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-size: map-get($font-sizes, 'xs');
+    }
+  }
+}

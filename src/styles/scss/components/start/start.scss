@@ -1,0 +1,46 @@
+.start {
+  background-image: url($base-assets-path + 'svg/clouds-start.svg');
+  background-color: map-get($colors, 'dark-blue');
+  padding: 91px 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  &__description {
+
+
+    margin-bottom: 47px;
+
+    h6 {
+      color: map-get($colors, 'white-color');
+      font-size: map-get($font-sizes, 'xs');
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: $main-font-family;
+      color: map-get($colors, 'white-color');
+      font-weight: 400;
+      font-size: map-get($font-sizes, 'xl');
+      margin: 28px;
+    }
+
+    p {
+      max-width: 470px;
+      line-height: 30px;
+      color: map-get($colors, 'white-color');
+      margin: 0 auto;
+    }
+
+  }
+
+  &__btns {
+    display: flex;
+    margin: 0 auto;
+  }
+}

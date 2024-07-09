@@ -1,0 +1,25 @@
+.quotes {
+  padding: 109px 76px;
+  &__container {
+    @include flex-gap(132px, true)
+  }
+  &__content {
+    width: 333px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      color: map-get($colors, 'accent-color');
+      font-size: map-get($font-sizes, 'xl');
+      font-weight: 400;
+    }
+    p {
+      line-height: 20px;
+      color: map-get($colors, 'main-font-color');
+      font-size: map-get($font-sizes, 'sm');
+    }
+  }
+}
+
+
+

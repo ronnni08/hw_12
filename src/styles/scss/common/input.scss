@@ -1,0 +1,34 @@
+.newsletter {
+  padding: 50px 0;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+}
+input {
+  border: none;
+  outline: none;
+  padding: 21px 23px;
+  background-color: map-get($colors, 'inputs-bg');
+  font-size: map-get($font-sizes, 'sm');
+  line-height: map-get($font-sizes, 'sm');
+  font-weight: bold;
+  color: map-get($colors, 'inputs-color');
+  font-family: $main-font-family;
+  border-radius: 5px;
+  transition: .3s;
+
+  &::placeholder {
+    color: map-get($colors, 'inputs-color');
+    font-family: $main-font-family;
+  }
+
+  &.input-md {
+    min-width: 280px;
+  }
+
+  &:focus, &:hover {
+      box-shadow: 0 5px 7px -4px map-get($colors, 'inputs-color');
+  }
+}

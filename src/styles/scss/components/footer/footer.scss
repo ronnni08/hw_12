@@ -1,0 +1,65 @@
+.footer {
+  $logo-dimension: 26px;
+  padding: 93px 0;
+
+  &__content {
+    @extend %flex-between;
+    align-items: center;
+
+
+  }
+
+  &__start {
+    @extend %flex-between;
+    align-items: center;
+    @include flex-gap(73px, false);
+  }
+
+  &__logo a {
+    background-color: map-get($colors, 'accent-color');
+    height: $logo-dimension;
+    width: $logo-dimension;
+    border-radius: 50%;
+    transition: .3s box-shadow;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      box-shadow: 0 0 11px -3px map-get($colors, 'black');
+    }
+  }
+
+  &__main-menu ul {
+    @extend %list-unstyled;
+    @include flex-gap(42px);
+
+    a {
+      @extend %base-link;
+    }
+
+  }
+
+  &__end {
+    @extend %flex-between;
+    align-items: center;
+    @include flex-gap(25px, false);
+  }
+
+  &__socials ul {
+    @extend %list-unstyled;
+    @include flex-gap(35px, true);
+    a {
+      @extend %base-link;
+      font-size: map-get($font-sizes, 'lg');
+    }
+
+  }
+
+  p {
+    margin-top: 38px;
+    padding-left: 100px;
+    line-height: 15px;
+    color: map-get($colors, 'footer-color');
+    font-size: map-get($font-sizes, 'md');
+  }
+}

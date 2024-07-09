@@ -1,0 +1,38 @@
+.blog {
+  background-color: map-get($colors, 'planer-bg');
+  padding-top: 104px;
+
+  &__info {
+
+    @include flex-gap(67px, true);
+    justify-content: center;
+    text-align: center;
+    padding: 64px 0;
+    background-color: map-get($colors, 'white-color');
+  }
+  &__text {
+    width: 408px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+      color: map-get($colors, 'accent-color');
+      font-size: map-get($font-sizes, 'xl');
+      font-weight: 400;
+    }
+    p {
+      line-height: 20px;
+      color: map-get($colors, 'main-font-color');
+      font-size: map-get($font-sizes, 'sm');
+    }
+  }
+  &__btns {
+    display: flex;
+  }
+  &__footer {
+    padding: 105px 0;
+    display: flex;
+    justify-content: center;
+  }
+}

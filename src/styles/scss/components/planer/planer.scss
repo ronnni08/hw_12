@@ -1,0 +1,45 @@
+.planer {
+  background-color: map-get($colors, 'planer-bg');
+
+  &__container {
+    @include flex-gap(55px, true);
+    align-items: center;
+    height: 766px;
+  }
+
+  &__content {
+    width: map-get($content-widths, 'xs');
+  }
+
+  &__description {
+
+    margin-bottom: 47px;
+
+    h6 {
+      color: map-get($colors, 'headers-color');
+      font-size: map-get($font-sizes, 'xs');
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: $main-font-family;
+      color: map-get($colors, 'headers-color');
+      font-weight: 400;
+      font-size: map-get($font-sizes, 'xl');
+      margin-bottom: 28px;
+    }
+
+    p {
+      max-width: 470px;
+      margin: 0 auto;
+      line-height: 30px;
+      color: map-get($colors, 'main-font-color');
+    }
+
+  }
+
+  &__btns {
+    display: flex;
+  }
+
+}

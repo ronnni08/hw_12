@@ -1,0 +1,17 @@
+.partners {
+  padding: 60px 0;
+
+  &__content {
+    @include flex-gap(75px, true);
+    justify-content: space-between;
+  }
+
+  &__logo {
+    path {
+      transition: .3s;
+    }
+    a:hover path {
+      fill: map-get($colors, 'partners-color');
+    }
+  }
+}

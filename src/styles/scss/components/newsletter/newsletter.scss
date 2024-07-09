@@ -1,0 +1,31 @@
+.newsletter {
+  min-height: 335px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+
+  &__content {
+    @include flex-gap(80px, true);
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__tittle {
+    max-width: 330px;
+    text-align: start;
+
+    h6 {
+      color: map-get($colors, 'headers-color');
+      font-size: map-get($font-sizes, 'lg');
+      margin-bottom: 18px;
+      font-weight: bold;
+    }
+
+    p {
+      line-height: 26px;
+      color: map-get($colors, 'main-font-color');
+      font-size: map-get($font-sizes, 'md');
+    }
+  }
+}

@@ -1,0 +1,58 @@
+$main-font-family: 'Quicksand', 'Roboto', sans-serif;
+$secondary-font-family: 'Roboto', 'Quicksand', sans-serif;
+$base-fonts-path: './../../fonts/';
+$base-assets-path: './../../assets/';
+
+$font-sizes: (
+  "xxl": 48px,
+  "xl": 36px,
+  "lg": 18px,
+  "md": 15px,
+  "sm": 13px,
+  "xs": 11px,
+);
+
+$colors: (
+  "accent-color": #5E81FE,
+  "tittle-color": #4074F8,
+  "light-blue": #D2E1FF,
+  "dark-blue": #6888FF,
+  "headers-color": #3D4F9F,
+  "main-font-color": #8D96BD,
+  "btn-primary-color": #3A79FF,
+  "btn-danger-bg-color": #FFD7D7,
+  "btn-danger-color": #D43F3F,
+  "btn-secondary-color": #ADB4D2,
+  "btn-icon-color": #fff,
+  "white-color": #fff,
+  "btn-icon-bg-color": #4C85FF,
+  "btn-base-color": #A6B6DA,
+  "black": #000,
+  "partners-color": #5982E7,
+  "bordered": #D8E3FE,
+  "banner-bg": #F5F6FF,
+  "planer-bg": #F5F8FF,
+  "logo-bg": #F1F5FF,
+  "quotes-bg": #EAF0FF,
+  "customers-right-bg": #E0E9FF,
+  "caret-color": #8E96B7,
+  "accent-tab": #495274,
+  "inputs-bg": #DFE2EF,
+  "inputs-color": #7A85AD,
+  "footer-color": #AEB8D0,
+);
+
+$content-widths: (
+  'xl': 1200px,
+  'lg': 992px,
+  'md': 767px,
+  'sm': 577px,
+  'xs': 460px,
+);
+
+$containers: (
+  'container': 1200px,
+  'container-lg': 840px,
+  'container-md': 767px,
+  'sm': 577px,
+)
